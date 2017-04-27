@@ -4,8 +4,14 @@
 console.log("Linear Search")
 let linearSearch = (target, values) => {
   //write your code here
-}
-
+  // return values.indexOf(target) // dengan menggunakan indexOf bisa langsung didapatlkan nilai index dan value -1 bila false
+  for(var i = 0; i < values.length ; i++){
+    if(target == values[i]){
+      return i;
+    }
+  }
+    return -1;
+  }
 let random_numbers = [ 6, 29, 18, 2, 72, 19, 18, 10, 37 ];
 
 console.log(linearSearch(18, random_numbers));
@@ -17,6 +23,13 @@ console.log(linearSearch(9, random_numbers));
 console.log("Global Linear Search")
 let globalLinearSearch = (target, values) => {
   //write your code here
+  var arr = [];
+  for (var i in values){//looping in array
+    if(target == values[i]){
+      arr.push(Number(i));
+    }
+  }
+  return arr;
 }
 
 let banana_arr = "banana".split("");
