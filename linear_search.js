@@ -3,7 +3,7 @@
 // Release 0
 console.log("Linear Search")
 let linearSearch = (target, values) => {
-  write your code here
+  //write your code here
   for (let i=0; i<values.length; i++){
     if (target === values[i]){
       return i;
