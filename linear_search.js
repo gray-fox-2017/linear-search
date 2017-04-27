@@ -4,16 +4,12 @@
 console.log("Linear Search")
 let linearSearch = (target, values) => {
   //write your code here
-  let status;
   for (let i = 0; i < values.length; i++) {
     if (values[i] == target) {
-      status = i;
-      break;
-    } else {
-      status = -1;
+      return i;
     }
   }
-  return status;
+  return -1;
 }
 
 let random_numbers = [ 6, 29, 18, 2, 72, 19, 18, 10, 37 ];
