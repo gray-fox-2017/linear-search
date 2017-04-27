@@ -7,7 +7,6 @@ let linearSearch = (target, values) => {
   for (let i = 0; i<len; i++) {
     if (values[i] === target) {
       return i;
-      break;
     }
   }
   return -1;
